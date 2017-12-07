@@ -1,0 +1,6 @@
+wanderley:
+  xcworkspace: /Users/wanderleylandim/Documents/ios/hellowXcode/HellowXcode.xcworkspace
+  scheme: HellowXcode-cal
+  configuration: Debug 
+  export_path: /Users/wanderleylandim/Documents/calabash-ios/build
+  

@@ -1,0 +1,4 @@
+# config/cucumber.yml
+##YAML Template
+---
+ios: PLATFORM=ios -r features/support -r features/ios -r features/step_definitions --exclude features/android --tags ~@manual --tags ~@nok --tags ~@negocio --tags ~@novo --tags ~@android --tags ~@integrado
