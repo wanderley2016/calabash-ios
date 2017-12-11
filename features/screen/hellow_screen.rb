@@ -10,7 +10,7 @@ class Hellow_app < IOSScreenBase
   element(:btn_ok)                             { "* marked:'OK'" }   
 
   def adicionar_nome(nome)
-    $nome = CREDENTIALS[nome.tr(' ', '_').to_sym][:user]
+    $nome = nome
     enter_text "* id:'#{txt_name}'", $nome
   end
 
@@ -28,12 +28,17 @@ class Hellow_app < IOSScreenBase
     touch("* id:'#{btn_limpar}'")
   end
 
-  def verificar_nome_excluído
+  def verificar_nome_foi_apagado
     query("* id:'labelname'",:text) ==[""]
   end
 
   def ocultar_teclado
     wait_for_transition("view isFirstResponder:1") 
     query("view isFirstResponder:1", :resignFirstResponder)
-  end     
+  end
+  
+  def verifica_mensagem_existe
+    raise 'mensagem não exibida'  unless element_exists("* text:'Adicionado com sucesso, #{$nome}'")
+    tocar_ok
+  end  
 end

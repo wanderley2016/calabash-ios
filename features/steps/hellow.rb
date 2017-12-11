@@ -5,18 +5,15 @@ end
 Dado("que o nome esteja inserido") do
   steps %Q(
     E que estou na home do app
-    E informo o "meu nome" 
+    E informo o "jurema"  
     E toco no botão gravar
     E vejo mensagem de alerta com o nome inserido
     )
   end
 
-Dado("informo o nome") do
-  @page.adicionar_nome
-end
-Dado(/^informo o "([^"]*)"$/) do |nome|
-  @page.adicionar_nome(nome) 
-end
+Dado(/^informo o "([^"]*)"$/)do |nome|
+  @page.adicionar_nome(nome)
+end  
 
 Quando("toco no botão gravar") do
   @page.tocar_saudar
@@ -27,10 +24,9 @@ Quando("toco no botão limpar") do
 end
 
 Entao("vejo mensagem de alerta com o nome inserido") do
-  raise 'mensagem não exibida' unless @page.has_text?($nome)
-  @page.tocar_ok  
+  @page.verifica_mensagem_existe  
 end
 
 Então("deve ser apagado o nome") do
-  raise 'O nome não foi apagado' unless @page.verificar_nome_excluído
+  raise 'O nome não foi apagado' unless @page.verificar_nome_foi_apagado
 end

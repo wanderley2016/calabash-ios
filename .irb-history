@@ -15,3 +15,12 @@ start_test_server_in_background
 ids
 exit
 exit
+start_test_server_in_background
+exit
+start_test_server_in_background
+exit
+start_test_server_in_background
+exit
+start_test_server_in_background
+reinstall_apps
+exit
