@@ -1,7 +1,10 @@
-#  Calabash-android x Appium android
+#  Calabash-ios x Appium-ios
 
 ## Quem tem a melhor Performance em Execução ?
 
+Ao invés de falar, melhor mostrar, esse projeto tem como objetivo 
+criar um repositorio com Appium Android e nesse <a href="https://github.com/wanderley2016/appium-ios">appium ios</a>
+para medir-mos a performance dos dois.
 
 ## Gerar o esqueleto do projeto
     
@@ -85,6 +88,9 @@ Para gerar o relatório no final dos teste, basta colocar o comando:
 APP_BUNDLE_PATH=<<caminho do.app>> DEVICE_TARGET= <<'id device'>> bundle exec cucumber features --format html --out reports.html
 ```
 ## Respostas
+
+Respondendo então pergunta do tópico. "Até o momento a execução dos testes com o calabash ios é bem mais lenta do que o appium ios".Se ficou curioso é só olhar o "reports" nos repositorios e verificar o time.
+
 
 
 
