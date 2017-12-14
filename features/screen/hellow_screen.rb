@@ -24,7 +24,7 @@ class Hellow_app < IOSScreenBase
   end
   
   def tocar_limpar
-    ocultar_teclado       
+    wait_for_transition("* marked:'OK'")    
     touch("* id:'#{btn_limpar}'")
   end
 
