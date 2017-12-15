@@ -3,7 +3,7 @@
 ## Quem tem a melhor Performance em Execução ?
 
 Ao invés de falar, melhor mostrar, esse projeto tem como objetivo 
-criar um repositorio com Appium Android e nesse <a href="https://github.com/wanderley2016/appium-ios">appium ios</a>
+criar um repositorio com calabash-ios e nesse <a href="https://github.com/wanderley2016/appium-ios">appium ios</a>
 para medir-mos a performance dos dois.
 
 ## Gerar o esqueleto do projeto
@@ -53,7 +53,7 @@ query"*",:class                         # exibe elementos tipo class na tela
 query"*",:id                            # exibe elementos tipo id na tela
 query"*",:text                          # exibe elementos tipo text na tela
 query"*",:contentDescription            # exibe elementos tipo contDesc na tela
-query("android.view.View")              # busca por classe especifica na tela
+query("UIButton")                       # busca por classe especifica na tela
 query("* id:'action_bar_root'")         # busca por id especifico na tela
 query("* text:'Buscar'")                # busca por text especifico na tela
 query("* contentDescription:'oi'")      # busca por contDesc na tela
