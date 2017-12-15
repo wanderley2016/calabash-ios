@@ -64,7 +64,7 @@ query("* id:'action_bar_root'").size    # verifica o tamanho
 
 ## Executando os testes
 
-````
+```
 Buscar os simuladores instalados em sua maquina execute o comando xcrun simctl list
 ``` 
 Para executar os testes basta digitar os comandos abaixo:
@@ -90,11 +90,3 @@ APP_BUNDLE_PATH=<<caminho do.app>> DEVICE_TARGET= <<'id device'>> bundle exec cu
 ## Respostas
 
 Respondendo então pergunta do tópico. "Até o momento a execução dos testes com o calabash ios é bem mais lenta do que o appium ios".Se ficou curioso é só olhar o "reports" nos repositorios e verificar o time.
-
-
-
-
-
-
-
-
